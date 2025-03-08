@@ -32,7 +32,10 @@ def predict():
         # Faz a previsão
         prediction = model.predict([data])[0]
         
-        return render_template("result.html", prediction=prediction)
+        # Converte 0 e 1 para "Sim" ou "Não"
+        resultado_texto = "Morreria" if prediction == 1 else "Sobreviveria"
+
+        return render_template("result.html", resultado_texto=resultado_texto)
     except Exception as e:
         return render_template("error.html", error=str(e))
 
