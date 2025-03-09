@@ -36,7 +36,7 @@ README.md
 1. Clone o repositório:
    ```bash
    git clone https://github.com/IohanaViterbino/ml_tilapia.git
-   cd seu-ml_tilapia
+   cd ml_tilapia
    ```
 2. Crie um ambiente virtual (opcional, mas recomendado):
    ```bash
